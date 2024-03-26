@@ -1,11 +1,64 @@
-.sea-section {
-	font-family: "Anonymous+Pro";
-	background-color: rgb(191, 216, 238);
-}
-.sea-section-title {
-	font-size: 5rem;
-	color: black;
-	font-weight: 700;
-	margin-left: 1rem;
-	margin-top: 1rem;
-}
+
+ body {
+	font-family: 'Anonymous Pro', monospace;
+	color: #333;
+	max-width: 720px;
+	margin: auto;
+	background: #f8f8f8;
+ }
+
+ img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+ }
+
+ .sea-section-title {
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #000000;
+ }
+
+ ol {
+	list-style-type: none;
+	padding: 0;
+	counter-reset: section;
+ }
+
+ ol li {
+	counter-increment: section;
+	margin-bottom: 10px;
+ }
+
+ ol li:before {
+	content: counters(section, ".") " ";
+	font-weight: bold;
+	font-size: 20px;
+	vertical-align: top;
+ }
+
+ ul {
+	padding-left: 20px;
+ }
+
+ ul li {
+	margin-bottom: 5px;
+ }
+
+ a {
+	color: #006d77;
+	text-decoration: none;
+ }
+
+ a:hover {
+	text-decoration: underline;
+ }
+
+ .title-style {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+ }
