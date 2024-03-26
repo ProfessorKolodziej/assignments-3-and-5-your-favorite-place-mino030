@@ -22,7 +22,7 @@
  }
 
  ol {
-	list-style-type: none;
+	/* list-style-type: none; */
 	padding: 0;
 	counter-reset: section;
  }
@@ -33,7 +33,7 @@
  }
 
  ol li:before {
-	content: counters(section, ".") " ";
+	/* content: counters(section, ".") " "; */
 	font-weight: bold;
 	font-size: 20px;
 	vertical-align: top;
@@ -41,6 +41,7 @@
 
  ul {
 	padding-left: 20px;
+	list-style-type: disc;
  }
 
  ul li {
